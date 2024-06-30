@@ -11,9 +11,9 @@
         <div class="wrapper">
             <div class="flex items-center bg-white rounded-md shadow-2xl p-3 px-5">
                 <a href="#">
-                    <img src="assets/image/logo.png" alt="logo"/>
+                    <img class="h-14 sm:h-auto" src="assets/image/logo.png" alt="logo"/>
                 </a>
-                <div class="flex w-full absolute inset-0 h-screen bg-wdark p-10 pt-16 -translate-x-full lg:translate-x-0 md:pt-24 lg:pt-0 lg:p-0 flex-col lg:flex-row lg:bg-transparent lg:relative lg:h-auto lg:items-center">
+                <div id="moble_menu" class="flex w-full absolute inset-0 h-screen bg-wdark p-10 pt-16 -translate-x-full lg:translate-x-0 md:pt-24 lg:pt-0 lg:p-0 flex-col lg:flex-row lg:bg-transparent lg:relative lg:h-auto lg:items-center anim">
                     <ul class="py-6 space-y-3 lg:space-y-0 lg:py-0 lg:flex lg:space-x-6 lg:mx-auto order-2 lg:order-1">
                         <li><a href="" class="text-xl sm:text-2xl text-gray-300 lg:hover:text-wblue lg:text-wdark font-medium lg:text-base anim">Home</a></li>
                         <li><a href="" class="text-xl sm:text-2xl text-gray-300 lg:hover:text-wblue lg:text-wdark font-medium lg:text-base anim">About Us</a></li>
@@ -44,13 +44,16 @@
                             </div>
                         </div>
                     </div>
+                    <span onclick="addActive('#moble_menu','-translate-x-full');removeActive('#moble_menu','translate-x-0');" class="w-10 h-10 bg-white rounded-full flex items-center justify-center absolute top-4 left-1/2 -translate-x-1/2 z-50 lg:hidden">
+                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><g data-name="02 User"><path d="M25 512a25 25 0 0 1-17.68-42.68l462-462a25 25 0 0 1 35.36 35.36l-462 462A24.93 24.93 0 0 1 25 512z" fill="#000000" opacity="1" data-original="#000000"></path><path d="M487 512a24.93 24.93 0 0 1-17.68-7.32l-462-462A25 25 0 0 1 42.68 7.32l462 462A25 25 0 0 1 487 512z" fill="#000000" opacity="1" data-original="#000000"></path></g></g></svg>
+                    </span>
                 </div>
-                <span class="inline-block lg:hidden ml-auto">
+                <span onclick="addActive('#moble_menu','translate-x-0');removeActive('#moble_menu','-translate-x-full');" class="inline-block lg:hidden ml-auto cursor-pointer">
                     <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg"> <rect x="0.919922" width="26" height="2" rx="1" fill="#687799"/> <rect x="2.41992" y="7" width="23" height="2" rx="1" fill="#687799"/> <rect x="6.41992" y="14" width="15" height="2" rx="1" fill="#687799"/> </svg>
                 </span>
             </div>
         </div>
-    </header>
+    </header>    
     <section class="relative pt-36 md:pt-44">
         <div class="wrapper relative z-10">
             <div class="flex items-center flex-wrap -mx-3.5 md:-mx-5">
@@ -86,6 +89,28 @@
         </div>
         <img src="assets/image/hero_banner.png" class="inset-0 w-full h-full object-cover absolute" alt="hero_banner"/>
     </section>
+
+
+    <script>
+        // Active Class JS
+            // toggle Class 
+            function toggleActive(Id, db) {
+            var element = document.querySelector(Id);
+            element.classList.toggle(db);
+            }
+
+            // add Class 
+            function addActive(Id, db) {
+            var element = document.querySelector(Id);
+            element.classList.add(db);
+            }
+
+            // remove Class 
+            function removeActive(Id, db) {
+            var element = document.querySelector(Id);
+            element.classList.remove(db);
+            }
+    </script>
     
 </body>
 </html>
