@@ -4,7 +4,11 @@
 @tailwind components;
 /* type our css */
 body{@apply font-rob;}
-
+h2{@apply text-2xl lg:text-4xl xl:text-40;}
+.f24{@apply text-base lg:text-lg xl:text-xl;}
+.graydent{
+    background: linear-gradient(360deg, #00194C 11.66%, rgba(0, 25, 76, 0) 65.89%);
+}
 .anim{@apply transition-all duration-300;}
 .wrapper{@apply w-full max-w-[1440px] mx-auto px-5 lg:px-6;}
 

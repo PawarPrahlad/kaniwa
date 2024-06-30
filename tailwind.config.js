@@ -9,6 +9,7 @@ module.exports = {
         '60': ['60px','60px'],
         '52': ['3.25rem','3.875rem'],
         'base': ['16px','24px'],
+        '40': ['40px','46px'],
       },
       colors:{
         wdark: '#00194C',
@@ -22,6 +23,7 @@ module.exports = {
       },
       boxShadow: {
         'one': '0 2px 50px 0px rgba(0, 0, 0, 0.05)',
+        'tow': '0 10px 30px 0px #CED2DD',
       }
     },
   },
