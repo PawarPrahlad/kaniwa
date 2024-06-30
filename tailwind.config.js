@@ -1,8 +1,26 @@
+const { lightblue } = require('color-name');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        '60': ['60px','60px'],
+        '52': ['3.25rem','3.875rem'],
+        'base': ['16px','24px'],
+      },
+      colors:{
+        wdark: '#00194C',
+        wblue: '#08509D',
+        lightblue: '#6A8EA7',
+        wgray: '#687799',
+      },
+      fontFamily: {
+        'rob': ['Roboto', 'sans-serif'],
+        'pop': ['Poppins', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
