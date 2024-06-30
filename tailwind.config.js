@@ -9,7 +9,7 @@ module.exports = {
         '60': ['60px','60px'],
         '52': ['3.25rem','3.875rem'],
         'base': ['16px','24px'],
-        '40': ['40px','46px'],
+        '40': ['40px','50px'],
       },
       colors:{
         wdark: '#00194C',
@@ -20,6 +20,7 @@ module.exports = {
       fontFamily: {
         'rob': ['Roboto', 'sans-serif'],
         'pop': ['Poppins', 'sans-serif'],
+        'urb': ['Urbanist', 'sans-serif'],
       },
       boxShadow: {
         'one': '0 2px 50px 0px rgba(0, 0, 0, 0.05)',
