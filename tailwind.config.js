@@ -20,6 +20,9 @@ module.exports = {
         'rob': ['Roboto', 'sans-serif'],
         'pop': ['Poppins', 'sans-serif'],
       },
+      boxShadow: {
+        'one': '0 2px 50px 0px rgba(0, 0, 0, 0.05)',
+      }
     },
   },
   plugins: [],
