@@ -16,6 +16,8 @@ module.exports = {
         wblue: '#08509D',
         lightblue: '#6A8EA7',
         wgray: '#687799',
+        wred: '#E63D0A',
+        tdark: '#262626',
       },
       fontFamily: {
         'rob': ['Roboto', 'sans-serif'],
@@ -25,6 +27,7 @@ module.exports = {
       boxShadow: {
         'one': '0 2px 50px 0px rgba(0, 0, 0, 0.05)',
         'tow': '0 10px 30px 0px #CED2DD',
+        'three': '0 5px 30px 0px rgba(0, 0, 0, 0.10)',
       }
     },
   },
